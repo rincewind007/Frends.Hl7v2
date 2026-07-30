@@ -2,9 +2,9 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <LangVersion>latest</LangVersion>
-        <Version>1.2.0</Version>
+        <Version>1.3.0</Version>
         <Authors>Frends</Authors>
-        <Copyright>Copyright (c) 2026 Frends EiPaaS</Copyright>
+        <Copyright>Frends</Copyright>
         <Company>Frends</Company>
         <Product>Frends</Product>
         <PackageTags>Frends</PackageTags>
