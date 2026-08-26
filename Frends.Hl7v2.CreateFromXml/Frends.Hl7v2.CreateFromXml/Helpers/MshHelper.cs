@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using Frends.Hl7v2.CreateFromXml.Definitions;
+using TjPTestCreateFromXml.Definitions;
 using NHapi.Base.Model;
 using NHapi.Base.Util;
-using static Frends.Hl7v2.CreateFromXml.Definitions.Enums;
+using static TjPTestCreateFromXml.Definitions.Enums;
 
-namespace Frends.Hl7v2.CreateFromXml.Helpers;
+namespace TjPTestCreateFromXml.Helpers;
 
 internal static class MshHelper
 {

@@ -4,7 +4,7 @@ using System.Xml;
 using System.Xml.Linq;
 using NHapi.Base;
 
-namespace Frends.Hl7v2.CreateFromXml.Helpers;
+namespace TjPTestCreateFromXml.Helpers;
 
 /// <summary>
 /// nhapi itself does not offer an option to fail when it cannot place a value from an input XML

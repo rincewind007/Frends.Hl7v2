@@ -1,7 +1,7 @@
 using System;
-using Frends.Hl7v2.CreateFromXml.Definitions;
+using TjPTestCreateFromXml.Definitions;
 
-namespace Frends.Hl7v2.CreateFromXml.Helpers;
+namespace TjPTestCreateFromXml.Helpers;
 
 internal static class ErrorHandler
 {

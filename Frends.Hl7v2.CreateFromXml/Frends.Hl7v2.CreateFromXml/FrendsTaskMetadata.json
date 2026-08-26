@@ -1,7 +1,7 @@
 ﻿{
   "Tasks": [
     {
-      "TaskMethod": "Frends.Hl7v2.CreateFromXml.Hl7v2.CreateFromXml"
+      "TaskMethod": "TjPTestCreateFromXml.Hl7v2.CreateFromXml"
     }
   ]
 }

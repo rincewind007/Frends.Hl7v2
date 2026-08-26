@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Frends.Hl7v2.CreateFromXml.Definitions;
+namespace TjPTestCreateFromXml.Definitions;
 
 /// <summary>
 /// Additional parameters.

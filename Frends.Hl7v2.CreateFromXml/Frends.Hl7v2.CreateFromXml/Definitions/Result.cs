@@ -1,4 +1,4 @@
-﻿namespace Frends.Hl7v2.CreateFromXml.Definitions;
+﻿namespace TjPTestCreateFromXml.Definitions;
 
 /// <summary>
 /// Result of the task.

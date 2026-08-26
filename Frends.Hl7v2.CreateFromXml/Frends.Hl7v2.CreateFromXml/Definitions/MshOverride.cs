@@ -1,6 +1,6 @@
-﻿using static Frends.Hl7v2.CreateFromXml.Definitions.Enums;
+﻿using static TjPTestCreateFromXml.Definitions.Enums;
 
-namespace Frends.Hl7v2.CreateFromXml.Definitions;
+namespace TjPTestCreateFromXml.Definitions;
 
 /// <summary>
 /// MSH field override: field to overwrite and its new value.

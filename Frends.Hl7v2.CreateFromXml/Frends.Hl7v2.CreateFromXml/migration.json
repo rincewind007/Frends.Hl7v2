@@ -1,6 +1,6 @@
 ﻿[
   {
-    "Task": "Frends.Hl7v2.CreateFromXml",
+    "Task": "TjPTestCreateFromXml",
     "Migrations": [
       {
         "Version": "1.0.0",

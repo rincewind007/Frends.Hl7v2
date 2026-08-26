@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading;
-using Frends.Hl7v2.CreateFromXml.Definitions;
-using Frends.Hl7v2.CreateFromXml.Helpers;
+using TjPTestCreateFromXml.Definitions;
+using TjPTestCreateFromXml.Helpers;
 using NHapi.Base.Model;
 using NHapi.Base.Parser;
 using NHapi.Base.Util;
-using static Frends.Hl7v2.CreateFromXml.Definitions.Enums;
+using static TjPTestCreateFromXml.Definitions.Enums;
 
-namespace Frends.Hl7v2.CreateFromXml;
+namespace TjPTestCreateFromXml;
 
 /// <summary>
 /// Task Class for Hl7v2 operations.

@@ -1,6 +1,6 @@
 using System;
 
-namespace Frends.Hl7v2.CreateFromXml.Definitions;
+namespace TjPTestCreateFromXml.Definitions;
 
 /// <summary>
 /// Error that occurred during the task.

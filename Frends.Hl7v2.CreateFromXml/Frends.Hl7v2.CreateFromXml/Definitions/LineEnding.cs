@@ -1,4 +1,4 @@
-namespace Frends.Hl7v2.CreateFromXml.Definitions;
+namespace TjPTestCreateFromXml.Definitions;
 
 #pragma warning disable SA1602 // self-explanatory enum
 public enum LineEnding
