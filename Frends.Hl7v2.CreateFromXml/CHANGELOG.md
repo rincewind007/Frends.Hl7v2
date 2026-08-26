@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0] - 2026-08-26
+
+### Added
+
+- `Options.CorrectWhitespaces`: controls whether nhapi normalizes whitespace in the XML while parsing (default `true`, matching previous behavior).
+- `Options.CrashOnUnknownTags`: throws an error when the XML contains a tag nhapi does not recognize, instead of silently adding it inline (default `false`, matching previous behavior).
+- `Options.CrashOnDataLoss`: throws an error when nhapi silently fails to place a value from the input XML into the parsed HL7v2 message, e.g. when a composite/nested field is given as flat text (default `false`, matching previous behavior).
+
 ## [1.2.0] - 2026-08-06
 
 ### Changed

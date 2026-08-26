@@ -34,7 +34,26 @@ public static class Hl7v2
             if (string.IsNullOrEmpty(input.Xml))
                 throw new ArgumentNullException(nameof(input), "You must provide an XML.");
             var xmlParser = new DefaultXMLParser();
-            var parsedMessage = xmlParser.Parse(input.Xml);
+            var parserOptions = new ParserOptions
+            {
+                // nhapi's own default is to correct/collapse whitespace, so "disable trimming" is
+                // the inverse of our CorrectWhitespaces switch.
+                DisableWhitespaceTrimmingOnAllXmlNodes = !options.CorrectWhitespaces,
+
+                // nhapi's own default is to silently add unrecognized tags inline (AddInline).
+                UnexpectedSegmentBehaviour = options.CrashOnUnknownTags
+                    ? UnexpectedSegmentBehaviour.ThrowHl7Exception
+                    : UnexpectedSegmentBehaviour.AddInline,
+            };
+            var parsedMessage = xmlParser.Parse(input.Xml, parserOptions);
+
+            // Validated against the pristine parse, before any MshOverrides are applied - otherwise every
+            // field an override intentionally changes would look like a "missing" value.
+            if (options.CrashOnDataLoss)
+            {
+                var roundTrippedXml = xmlParser.EncodeDocument(parsedMessage, parserOptions);
+                DataLossValidator.ThrowIfDataWasLost(input.Xml, roundTrippedXml, options.CorrectWhitespaces);
+            }
 
             var pipeParser = new PipeParser();
             var lineEnding = options.LineEnding switch
