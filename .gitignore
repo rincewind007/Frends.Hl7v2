@@ -106,3 +106,7 @@ temp/
 *.orig
 *.rej
 *~
+
+# Generated round-trip outputs
+**/RunOutput/
+**/TestRunOutput/

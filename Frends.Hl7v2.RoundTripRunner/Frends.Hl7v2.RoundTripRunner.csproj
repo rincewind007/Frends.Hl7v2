@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <AssemblyName>Hl7RoundTripRunner</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Standalone scratch project: a plain console "bin" that runs the same
+             round trip as Frends.Hl7v2.RoundTripTests' case 14, over the same
+             HL7Messages/ folder, without going through dotnet test/NUnit. Not
+             part of any existing task's solution. -->
+        <ProjectReference Include="..\Frends.Hl7v2.ConvertToXml\Frends.Hl7v2.ConvertToXml\Frends.Hl7v2.ConvertToXml.csproj" />
+        <ProjectReference Include="..\Frends.Hl7v2.CreateFromXml\Frends.Hl7v2.CreateFromXml\Frends.Hl7v2.CreateFromXml.csproj" />
+    </ItemGroup>
+</Project>

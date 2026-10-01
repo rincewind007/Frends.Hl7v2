@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Standalone scratch project: exercises the built ConvertToXml + CreateFromXml
+             tasks together in a round-trip test. Not part of any existing task's solution. -->
+        <ProjectReference Include="..\Frends.Hl7v2.ConvertToXml\Frends.Hl7v2.ConvertToXml\Frends.Hl7v2.ConvertToXml.csproj" />
+        <ProjectReference Include="..\Frends.Hl7v2.CreateFromXml\Frends.Hl7v2.CreateFromXml\Frends.Hl7v2.CreateFromXml.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.*" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.*" />
+        <PackageReference Include="NUnit" Version="4.*" />
+        <PackageReference Include="NUnit3TestAdapter" Version="6.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- TestData: small, hand-curated fixtures for cases 1-9 (always refresh). -->
+        <None Update="TestData\**" CopyToOutputDirectory="Always" />
+        <!-- HL7Messages: bulk dump folder for real-world samples (cases 10+ and the
+             dynamic per-file test below). Meant to hold 100+ files, so only copy
+             what changed rather than re-copying everything on every build. -->
+        <None Update="HL7Messages\**" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>

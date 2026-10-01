@@ -1,0 +1,8 @@
+MSH|^~\&|SYNGODYNAMICS|Region Skåne|||202110201103||DFT^P03|21293398006671|P|2.4
+EVN|P03|20211020095838
+PID|1||199808212386^^^1.2.752.129.2.1.3.1^SS||KARLSSON-NORD^INT-MARIA||19980821|F||||||||||33022^^^FIN^AN
+FT1|1|SDVX-00006820-1||20211020095838|20211020095838|CG|AM006^Obstetriskt ultraljud, viktskattning^SYNGKOD|||1|||||||||O001^Graviditet i äggledaren^ICD-10~O002^äggstocksgraviditet^ICD-10~||959115^Cerner Test^Läkare - Sjukhusläkare||SDVX-00006820
+FT1|2|SDVX-00006820-2||20211020095838|20211020095838|CG|AM011^Obstetriskt ultraljud, annat specificerat^SYNGKOD|||1|||||||||O001^Graviditet i äggledaren^ICD-10~O002^äggstocksgraviditet^ICD-10~||959115^Cerner Test^Läkare - Sjukhusläkare||SDVX-00006820
+FT1|3|SDVX-00006820-3||20211020095838|20211020095838|CG|AM012^Obstetriskt ultraljud, NUPP-KUB^SYNGKOD|||1|||||||||O001^Graviditet i äggledaren^ICD-10~O002^äggstocksgraviditet^ICD-10~||959115^Cerner Test^Läkare - Sjukhusläkare||SDVX-00006820
+FT1|4|SDVX-00006820-4||20211020095838|20211020095838|CG|AM014^Obstetriskt ultraljud för bedömning av fosterläge^SYNGKOD|||1|||||||||O001^Graviditet i äggledaren^ICD-10~O002^äggstocksgraviditet^ICD-10~||959115^Cerner Test^Läkare - Sjukhusläkare||SDVX-00006820
+FT1|5|SDVX-00006820-5||20211020095838|20211020095838|CG|AM016^Obstetriskt ultraljud med dopplerundersökning av andra fetala kärl^SYNGKOD|||1|||||||||O001^Graviditet i äggledaren^ICD-10~O002^äggstocksgraviditet^ICD-10~||959115^Cerner Test^Läkare - Sjukhusläkare||SDVX-00006820
